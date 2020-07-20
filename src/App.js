@@ -1,8 +1,12 @@
 import React from "react";
 import "./App.css";
 import { Button } from "./components";
+import { useResizeWindow } from "./customHooks";
 
 function App() {
+  const size = useResizeWindow();
+  console.log(size);
+
   return (
     <div className="App">
       <header className="App-header">
